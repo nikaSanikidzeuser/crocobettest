@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #1E2A47;
+}
+
+#userList {
+    max-width: 960px;
+}
+
+.userButton {
+    background-color: #2B3442;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: calc(33.33% - 10px);
+    box-sizing: border-box;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.userButton:hover {
+    box-shadow: 0 0 20px #008CBA;
+}
+
+
+@media (max-width: 768px) {
+    .userButton {
+        width: calc(50% - 10px);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .userButton {
+        width: 100%;
+
+    }
+}
+
+#userDetails div {
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#userPosts p {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
